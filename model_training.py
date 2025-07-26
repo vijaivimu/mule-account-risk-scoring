@@ -1,4 +1,5 @@
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
@@ -43,3 +44,7 @@ print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 
 print("ROC AUC Score:", roc_auc_score(y_test, y_probs))
+
+# Save the trained model to a file
+joblib.dump(model, 'fraud_model.pkl')
+print("\n✅ Model saved to 'fraud_model.pkl'")
