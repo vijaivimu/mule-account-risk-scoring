@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment folders
+venv/
+.env/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Environment and config files
+.env
+*.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Data files (optional)
+*.db
+*.sqlite
